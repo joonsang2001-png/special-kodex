@@ -1,8 +1,6 @@
-# Special Kodex
-
-# 자동 새로고침 (1분)
-# Other contents...
-
-def some_function():
-    time.sleep(60)
-# Additional content here...
+streamlit
+pandas
+yfinance
+gspread
+oauth2client
+scikit-learn
