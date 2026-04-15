@@ -10,12 +10,12 @@ st.set_page_config(page_title="🛡️ 07:00 AI 투자 비서", layout="centered
 # --- [2. 핵심 분석 함수] ---
 def get_market_strategy():
     try:
+# --- [3. 핵심 분석 함수] ---
 def get_market_strategy():
     try:
-        # 나스닥 지수 데이터 가져오기
+        # 이 아래 줄들이 반드시 오른쪽으로 들여쓰기 되어야 합니다.
         nasdaq = yf.download("^IXIC", period="5d", interval="1d")
         
-        # 마지막 종가와 전일 종가 추출 (반드시 .item()을 사용하여 단일 숫자로 변환)
         current_close = nasdaq['Close'].iloc[-1].item()
         prev_close = nasdaq['Close'].iloc[-2].item()
         
@@ -24,7 +24,6 @@ def get_market_strategy():
         st.warning(f"데이터 분석 중 알림: {e}")
         n_change = 0 
     
-    # 이제 n_change는 확실한 '숫자'이므로 에러가 나지 않습니다.
     if n_change < -1.0:
         return "🚨 보수적 관망", f"나스닥 {n_change:.2f}% 하락. 시초가 추격 금지.", n_change
     elif n_change > 1.0:
