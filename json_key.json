@@ -2,7 +2,7 @@
   "type": "service_account",
   "project_id": "special-kodex",
   "private_key_id": "special-kodex",
-  "private_key": "-----BEGIN PRIVATE KEY-----\n여기에 아주 긴 비밀키 내용이 들어갑니다\n-----END PRIVATE KEY-----\n",
+  "private_key": "-----BEGIN PRIVATE KEY-----\n여기에 구글 콘솔에서 받은 실제 긴 암호 키를 한 줄로 넣으세요\n-----END PRIVATE KEY-----\n",
   "client_email": "service-account@special-kodex.iam.gserviceaccount.com",
   "client_id": "713549985873",
   "auth_uri": "https://accounts.google.com/o/oauth2/auth",
